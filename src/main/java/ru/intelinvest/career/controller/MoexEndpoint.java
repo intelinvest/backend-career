@@ -36,6 +36,7 @@ public class MoexEndpoint {
     @PostMapping("stocks")
     public ResponseEntity<List<Stock>> processIntegration() {
         var stocks = moexService.getStocks();
+        // todo реализация задания № 2 и 3 здесь
         return ResponseEntity.ok(stocks);
     }
 }
